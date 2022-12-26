@@ -1,0 +1,41 @@
+@use '../helpers/mixins';
+@use '../helpers/components';
+
+.main{
+    @include mixins.padding-container;
+    @include mixins.flex-init(column, center, center, 0)
+}
+
+.section{
+    @include mixins.flex-init(column, center, center, 5rem)
+}
+
+.article{
+    height: 23rem;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.111);
+    display: flex;
+    padding: 2rem 2rem 2rem 5rem;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+    
+
+    &__container{
+        width: 50%;
+    }
+
+    &__title{
+        @include components.title-section;
+    }
+
+    &__text{
+        @include components.text-section;
+    }
+
+    &__image{
+        @include mixins.insert-img;
+        height: 100%;
+        width: auto;
+    }
+}

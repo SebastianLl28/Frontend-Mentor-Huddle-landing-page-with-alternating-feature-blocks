@@ -1,0 +1,50 @@
+@use 'variables';
+@use 'mixins';
+
+@mixin button ($widht){
+    font-size: .8em;
+    font-family: 'Poppins', sans-serif;
+    width: $widht;
+    height: 2.8rem;
+    background-color: variables.$pink;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: variables.$very-pale-cyan;
+    &:hover{
+        opacity: .7;
+    }
+}
+
+@mixin link {
+    color: variables.$very-pale-cyan;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+@mixin title-section {
+    color: variables.$very-dark-cyan;
+    // font-family: 'Open Sans', sans-serif;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+@mixin text-section {
+    font-size: .8em;
+    color: variables.$grayish-blue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin card ($img-position){
+    height: 20rem;
+    width: 100%;
+    
+    @if $img-position == "left" {
+
+        
+    }
+}
