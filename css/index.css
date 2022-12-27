@@ -132,6 +132,10 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  justify-content: center;
+  margin-bottom: 10rem;
 }
 
 .nav {
@@ -160,48 +164,54 @@ body {
   font-weight: bold;
   color: hsl(192deg, 100%, 9%);
 }
+.nav__link:hover {
+  opacity: 0.4;
+}
 
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 1fr;
   padding: 0 8%;
-  gap: 6rem;
+  gap: 2rem;
 }
 .hero__title {
   color: hsl(192deg, 100%, 9%);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.5em;
-  font-size: 1.8em;
-  width: 70%;
+  font-size: 2.5em;
 }
 .hero__text {
-  font-size: 0.8em;
+  font-size: 1.2em;
   color: hsl(208deg, 11%, 55%);
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
+  line-height: 1.6rem;
   color: hsl(192deg, 100%, 9%);
 }
 .hero__button {
   font-size: 0.8em;
   font-family: "Poppins", sans-serif;
-  width: 13rem;
-  height: 2.8rem;
+  width: 16rem;
+  height: 3.2rem;
   background-color: hsl(322deg, 100%, 66%);
   border-radius: 3rem;
   cursor: pointer;
   color: hsl(193deg, 100%, 96%);
 }
 .hero__button:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1rem;
-  width: 80%;
+  gap: 1.3rem;
+  width: 100%;
+}
+.hero__img {
+  margin: auto;
 }
 
 .main {
@@ -241,7 +251,7 @@ body {
   font-size: 1.5em;
 }
 .article__text {
-  font-size: 0.8em;
+  font-size: 1.2em;
   color: hsl(208deg, 11%, 55%);
   font-family: "Open Sans", sans-serif;
 }

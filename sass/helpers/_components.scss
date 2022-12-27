@@ -5,13 +5,13 @@
     font-size: .8em;
     font-family: 'Poppins', sans-serif;
     width: $widht;
-    height: 2.8rem;
+    height: 3.2rem;
     background-color: variables.$pink;
     border-radius: 3rem;
     cursor: pointer;
     color: variables.$very-pale-cyan;
     &:hover{
-        opacity: .7;
+        opacity: .6;
     }
 }
 
@@ -29,12 +29,12 @@
     color: variables.$very-dark-cyan;
     // font-family: 'Open Sans', sans-serif;
     font-family:'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 600                ;
     font-size: 1.5em;
 }
 
 @mixin text-section {
-    font-size: .8em;
+    font-size: 1.2em;
     color: variables.$grayish-blue;
     font-family: 'Open Sans', sans-serif;
 }
